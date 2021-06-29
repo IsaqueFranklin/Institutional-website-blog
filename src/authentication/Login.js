@@ -28,7 +28,7 @@ function Login(props) {
             login
                 ? await firebase.login(email, password)
                 : await firebase.register(name, email, password, nameTitle)
-            props.history.push('/')
+            props.history.push('/painel')
         }catch(err) {
             console.error('Erro de autenticação.', err)
             setFirebaseError(err.message)
