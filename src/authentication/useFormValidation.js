@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-function useFormValidation(intialState, validate, authenticate) {
+function useFormValidation(initialState, validate, authenticate) {
 
     const [values, setValues] = useState(initialState)
     const [errors, setErrors] = useState({})
@@ -27,8 +27,8 @@ function useFormValidation(intialState, validate, authenticate) {
     }
 
     function handleBlur() {
-        const validationError = validate(values)
-        setErrors(validateErrors)
+        const validationErrors = validate(values)
+        setErrors(validationErrors)
     }
 
     function handleSubmit(event) {
