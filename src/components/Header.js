@@ -25,6 +25,12 @@ function Header() {
                 </Nav>
                 <Nav>
                 <Nav.Link href="/contato">Contato</Nav.Link>
+                {user && (
+                    <>
+                    <Nav.Link>{user.displayName}</Nav.Link>
+                    <Nav.Link href='/create'>Criar post</Nav.Link>
+                    </>
+                )}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

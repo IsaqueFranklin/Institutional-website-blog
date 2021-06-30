@@ -9,6 +9,9 @@ import Home from './components/Home'
 import Login from './authentication/Login'
 import ForgotPassword from './authentication/ForgotPassword'
 import Painel from './components/Painel'
+import CreatePost from './components/CreatePost'
+import Blog from './components/Blog'
+
 
 function App() {
 
@@ -24,7 +27,8 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/forgot' component={ForgotPassword} />
-            /*kjnkjnkj */
+            <Route path='/create' component={CreatePost} />
+            <Route path='/blog' component={Blog} />
             <PrivateRoute path='/painel' component={Painel} />
           </Switch>
           </div>
