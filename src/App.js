@@ -11,6 +11,7 @@ import ForgotPassword from './authentication/ForgotPassword'
 import Painel from './components/Painel'
 import CreatePost from './components/CreatePost'
 import Blog from './components/Blog'
+import UpdatePost from './components/UpdatePost'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path='/forgot' component={ForgotPassword} />
             <Route path='/create' component={CreatePost} />
             <Route path='/blog' component={Blog} />
+            <Route path='/update/:postId' component={UpdatePost} />
             <PrivateRoute path='/painel' component={Painel} />
           </Switch>
           </div>

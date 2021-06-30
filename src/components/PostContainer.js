@@ -44,7 +44,7 @@ function PostContainer({ post, showCount, history }) {
                                         Delete
                                     </span>
                                     {" | "}
-                                    <Link to={`/edit/${post.id}`}>
+                                    <Link to={`/update/${post.id}`}>
                                         Update
                                     </Link>
                                     </>
