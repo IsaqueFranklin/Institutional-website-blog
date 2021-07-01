@@ -47,12 +47,7 @@ function Post({ post, showCount, history }) {
             <hr></hr>
             <div className="links" dangerouslySetInnerHTML={{ __html: post.content }} />
             <br></br>
-            <Card className="homecard links" style={{ backgroundColor: '#091116', color: '#fff'}}>
-                <Card.Body>
-                    <p>Wanna see more posts from @{post.postedBy.name}?</p>
-                    <Link to={`/${post.postedBy.email}`}><button style={{ backgroundColor: '#fff', color: '#091116'}}>See more posts</button></Link>
-                </Card.Body>
-            </Card>
+            <Link to={`/${post.postedBy.email}`}><button style={{ backgroundColor: '#fff', color: '#091116'}}>Ver mais</button></Link>
         </Container>
         </div>
     )
