@@ -47,7 +47,9 @@ function Post({ post, showCount, history }) {
             <hr></hr>
             <div className="links" dangerouslySetInnerHTML={{ __html: post.content }} />
             <br></br>
-            <Link to={`/${post.postedBy.email}`}><button style={{ backgroundColor: '#fff', color: '#091116'}}>Ver mais</button></Link>
+            <Link className="links" to={`/${post.postedBy.email}`}><button>Ver mais</button></Link>
+            <br></br>
+            <br></br>
         </Container>
         </div>
     )

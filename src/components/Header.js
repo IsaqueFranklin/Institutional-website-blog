@@ -9,7 +9,7 @@ function Header() {
     const {user, firebase} = React.useContext(FirebaseContext)
 
     return (
-        <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" style={{backgroundColor: "#fff"}}>
+        <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top" style={{backgroundColor: "#4d0026", color: "#fff"}}>
             <Navbar.Brand href="/">Arca Perícia</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
