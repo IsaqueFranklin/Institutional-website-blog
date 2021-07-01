@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import './styles/style.css'
 import { BrowserRouter, Switch, Route, Redirect, Component } from 'react-router-dom'
 import PrivateRoute from './authentication/PrivateRoute'
 import firebase, { FirebaseContext } from './firebase'
@@ -12,7 +13,7 @@ import Painel from './components/Painel'
 import CreatePost from './components/CreatePost'
 import Blog from './components/Blog'
 import UpdatePost from './components/UpdatePost'
-
+import ReadPost from './components/ReadPost'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/create' component={CreatePost} />
             <Route path='/blog' component={Blog} />
             <Route path='/update/:postId' component={UpdatePost} />
+            <Route path='/post/:postId' component={ReadPost} />
             <PrivateRoute path='/painel' component={Painel} />
           </Switch>
           </div>
