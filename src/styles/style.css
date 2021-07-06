@@ -1,5 +1,5 @@
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
 
@@ -187,16 +187,21 @@ a:hover{
 }
 
 .frontbanner {
-    background-image: url('https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
     width: 100%;
     padding: 10px;
-    color: #0a0a0a;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    transition: transform .2s;
+}
+
+.frontbanner:hover{
+    transform: scale(1.01);
 }
 
 .about {
@@ -207,8 +212,37 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: grayscale(10%);
+}
+
+.frontWords {
+    margin: 15%;
 }
 
 .titulo {
-    font-size: 50px;
+    font-size: 70px;
+    color: #fff;
+}
+
+.paragraph {
+    font-size: 30px;
+    color: #fff;
+}
+
+.footer {
+    background-color:#4d0026;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer ul li {
+    text-decoration: none;
 }

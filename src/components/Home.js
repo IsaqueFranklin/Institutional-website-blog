@@ -6,11 +6,12 @@ function Home() {
     return (
         <>
             <div className="frontbanner">
-                <div>
+                <div className="frontWords">
                 <h1 className="titulo">Arca Perícia</h1>
-                <p>O seu cálculo está aqui</p>
+                <h4 className="paragraph">O seu cálculo está aqui</h4>
                 <br></br>
-                <button>blog</button>
+                <button>Blog</button>
+                <button>Orçamento</button>
                 </div>
             </div>
             <div className="about">

@@ -14,6 +14,8 @@ import CreatePost from './components/CreatePost'
 import Blog from './components/Blog'
 import UpdatePost from './components/UpdatePost'
 import ReadPost from './components/ReadPost'
+import Footer from './components/Footer'
+
 
 function App() {
 
@@ -36,6 +38,7 @@ function App() {
             <PrivateRoute path='/painel' component={Painel} />
           </Switch>
           </div>
+          <Footer />
         </div>
       </FirebaseContext.Provider>
     </BrowserRouter>
