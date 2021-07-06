@@ -34,6 +34,10 @@ function Footer() {
                     </ul>
                 </Col>
             </Row>
+            <br></br>
+            <br></br>
+            <p>Arca Perícia &copy 2021</p>
+            <br></br>
             </Container>
         </div>
     )

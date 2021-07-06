@@ -27,7 +27,9 @@ function Header() {
                 <Nav.Link href="/contato">Contato</Nav.Link>
                 {user && (
                     <>
-                    <Nav.Link>{user.displayName}</Nav.Link>
+                    <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
+                    <NavDropdown.Item onClick={() => firebase.logout()}>Sair</NavDropdown.Item>
+                </NavDropdown>
                     <Nav.Link href='/create'>Criar post</Nav.Link>
                     </>
                 )}
