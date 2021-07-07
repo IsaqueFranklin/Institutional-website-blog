@@ -7,7 +7,7 @@ function Footer() {
             <br></br>
             <Container>
             <Row>
-                <Col>
+                <Col sm>
                     <ul>
                         <h4>Redes sociais</h4>
                         <li>Instagram</li>
@@ -16,7 +16,7 @@ function Footer() {
                         <li>Whatsapp</li>
                     </ul>
                 </Col>
-                <Col>
+                <Col sm>
                     <ul>
                         <h4>Links</h4>
                         <li>Curso</li>
@@ -24,7 +24,7 @@ function Footer() {
                         <li>Contato</li>
                     </ul>
                 </Col>
-                <Col>
+                <Col sm>
                     <ul>
                         <h4>Serviços</h4>
                         <li>serviço 1</li>
@@ -36,8 +36,7 @@ function Footer() {
             </Row>
             <br></br>
             <br></br>
-            <p>Arca Perícia &copy 2021</p>
-            <br></br>
+            <p className="center">&copy; Arca Perícia 2021</p>
             </Container>
         </div>
     )
