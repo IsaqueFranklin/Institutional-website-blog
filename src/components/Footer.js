@@ -22,14 +22,15 @@ function Footer() {
                         <li>Curso</li>
                         <li>Blog</li>
                         <li>Contato</li>
+                        <li>Fazer orçamento</li>
                     </ul>
                 </Col>
                 <Col sm>
                     <ul>
-                        <h4>Serviços</h4>
-                        <li>serviço 1</li>
-                        <li>serviço 2</li>
-                        <li>serviço 3</li>
+                        <h4>Perícias</h4>
+                        <li>Contábil Trabalhista</li>
+                        <li>Cível e Financeira</li>
+                        <li>Contábil Previdenciária</li>
                         <li>Fazer orçamento</li>
                     </ul>
                 </Col>

@@ -32,7 +32,22 @@ function Home() {
                 </Container>
             </div>
             <div className="services">
-
+                <Container>
+                    <Row>
+                        <Col>
+                            <p className="paragraph3">Perícia Contábil Trabalhista</p>
+                        </Col>
+                        <Col>
+                            <p className="paragraph3">Perícia Cível e Financeira</p>
+                        </Col>
+                        <Col>
+                            <p className="paragraph3">Perícia Contábil Previdenciária</p>
+                        </Col>
+                        <Col>
+                            <p className="paragraph3">Cursos online e presencial</p>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div className="course">
 
