@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top" style={{backgroundColor: "#430419", color: "#fff",}}>
-            <Navbar.Brand href="/">Arca Perícia</Navbar.Brand>
+            <Navbar.Brand href="/">Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">

@@ -10,28 +10,31 @@ function Footer() {
                 <Col sm>
                     <ul>
                         <h4>Redes sociais</h4>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>Email</li>
-                        <li>Whatsapp</li>
+                        <li><small>Instagram</small></li>
+                        <li><small>Facebook</small></li>
+                        <li><small>Email</small></li>
+                        <li><small>Whatsapp</small></li>
+                        <br></br>
                     </ul>
                 </Col>
                 <Col sm>
                     <ul>
                         <h4>Links</h4>
-                        <li>Curso</li>
-                        <li>Blog</li>
-                        <li>Contato</li>
-                        <li>Fazer orçamento</li>
+                        <li><small>Cursos</small></li>
+                        <li><small>Blog</small></li>
+                        <li><small>Contato</small></li>
+                        <li><small>Orçamento</small></li>
+                        <br></br>
                     </ul>
                 </Col>
                 <Col sm>
                     <ul>
                         <h4>Perícias</h4>
-                        <li>Contábil Trabalhista</li>
-                        <li>Cível e Financeira</li>
-                        <li>Contábil Previdenciária</li>
-                        <li>Fazer orçamento</li>
+                        <li><small>Contábil Trabalhista</small></li>
+                        <li><small>Cível e Financeira</small></li>
+                        <li><small>Contábil Previdenciária</small></li>
+                        <li><small>Orçamento</small></li>
+                        <br></br>
                     </ul>
                 </Col>
             </Row>

@@ -10,8 +10,8 @@ function Home() {
                 <h1 className="titulo">Arca Perícia</h1>
                 <h4 className="paragraph">O seu cálculo está aqui</h4>
                 <br></br>
-                <button>Blog</button>
-                <button>Orçamento</button>
+                <a href="/blog"><button>Blog</button></a>
+                <a href="/orçamento"><button>Orçamento</button></a>
                 </div>
             </div>
             <div className="about">
@@ -33,20 +33,34 @@ function Home() {
             </div>
             <div className="services">
                 <Container>
+                <br></br>
+                <br></br>
+                <h2 className="titulo3">O que fazemos?</h2>
+                <br></br>
+                <br></br>
                     <Row>
                         <Col>
-                            <p className="paragraph3">Perícia Contábil Trabalhista</p>
+                            <img src="img/work.png" alt="trabalhista" />
+                            <p className="paragraph3">Perícia Trabalhista</p>
                         </Col>
                         <Col>
+                            <img src="img/money.png" alt="financeira" />
                             <p className="paragraph3">Perícia Cível e Financeira</p>
                         </Col>
                         <Col>
-                            <p className="paragraph3">Perícia Contábil Previdenciária</p>
+                            <img src="img/veio.png" alt="previdenciária" />
+                            <p className="paragraph3">Perícia Previdenciária</p>
                         </Col>
                         <Col>
-                            <p className="paragraph3">Cursos online e presencial</p>
+                            <img src="img/course.png" alt="cursos" />
+                            <p className="paragraph3">Cursos</p>
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <a href="/orçamento"><button style={{ backgroundColor: "#fff", color: "#430419" }}>Fazer Orçamento</button></a>
+                    <br></br>
+                    <br></br>
                 </Container>
             </div>
             <div className="course">
