@@ -251,6 +251,16 @@ a:hover{
     text-align: center;
 }
 
+.contact {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .colitem {
     align-items: center;
     justify-content: center;
