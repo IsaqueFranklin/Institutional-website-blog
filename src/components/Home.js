@@ -64,7 +64,11 @@ function Home() {
                 </Container>
             </div>
             <div className="course">
-
+                    <br></br>
+                    <br></br>
+                    <h4 className="titulo3">Nós temos um curso de perícia</h4>
+                    <p className="paragraph3">Um curso de perícia para interassados em aprender a trabalhar com perícia contábil.</p>
+                    <a href=""><button>Ver curso</button></a>
             </div>
             <div className="money">
 
