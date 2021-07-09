@@ -15,6 +15,8 @@ import Blog from './components/Blog'
 import UpdatePost from './components/UpdatePost'
 import ReadPost from './components/ReadPost'
 import Footer from './components/Footer'
+import Orçamento from './components/Orçamento'
+import Contato from './components/Contato'
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
             <Route path='/forgot' component={ForgotPassword} />
             <Route path='/create' component={CreatePost} />
             <Route path='/blog' component={Blog} />
+            <Route path='/contato' component={Contato} />
+            <Route path='/orçamento' component={Orçamento} />
             <Route path='/update/:postId' component={UpdatePost} />
             <Route path='/post/:postId' component={ReadPost} />
             <PrivateRoute path='/painel' component={Painel} />

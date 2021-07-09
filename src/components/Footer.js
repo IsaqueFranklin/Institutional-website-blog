@@ -10,30 +10,30 @@ function Footer() {
                 <Col sm>
                     <ul>
                         <h4>Redes sociais</h4>
-                        <li><small>Instagram</small></li>
-                        <li><small>Facebook</small></li>
-                        <li><small>Email</small></li>
-                        <li><small>Whatsapp</small></li>
+                        <li><small><a href="">Instagram</a></small></li>
+                        <li><small><a href="">Facebook</a></small></li>
+                        <li><small><a href="">Email</a></small></li>
+                        <li><small><a href="">Whatsapp</a></small></li>
                         <br></br>
                     </ul>
                 </Col>
                 <Col sm>
                     <ul>
                         <h4>Links</h4>
-                        <li><small>Cursos</small></li>
-                        <li><small>Blog</small></li>
-                        <li><small>Contato</small></li>
-                        <li><small>Orçamento</small></li>
+                        <li><small><a href="">Cursos</a></small></li>
+                        <li><small><a href="/blog">Blog</a></small></li>
+                        <li><small><a href="/contato">Contato</a></small></li>
+                        <li><small><a href="/orçamento">Orçamento</a></small></li>
                         <br></br>
                     </ul>
                 </Col>
                 <Col sm>
                     <ul>
                         <h4>Perícias</h4>
-                        <li><small>Contábil Trabalhista</small></li>
-                        <li><small>Cível e Financeira</small></li>
-                        <li><small>Contábil Previdenciária</small></li>
-                        <li><small>Orçamento</small></li>
+                        <li><small><a href="/serviços">Contábil Trabalhista</a></small></li>
+                        <li><small><a href="/serviços">Cível e Financeira</a></small></li>
+                        <li><small><a href="/serviços">Contábil Previdenciária</a></small></li>
+                        <li><small><a href="/orçamento">Orçamento</a></small></li>
                         <br></br>
                     </ul>
                 </Col>

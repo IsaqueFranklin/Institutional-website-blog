@@ -16,13 +16,7 @@ function Header() {
                 <Nav className="mr-auto">
                     <Nav.Link href="/blog">Blog</Nav.Link>
                     <Nav.Link href="/contato">Contato</Nav.Link>
-                    <NavDropdown title="Serviços" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="">Separated link</NavDropdown.Item>
-                    </NavDropdown>
+                    <Nav.Link href="/serviços">Serviços</Nav.Link>
                     {user && (
                         <>
                         <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
