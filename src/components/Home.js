@@ -67,11 +67,20 @@ function Home() {
                     <br></br>
                     <br></br>
                     <h4 className="titulo3">Nós temos um curso de perícia</h4>
-                    <p className="paragraph3">Um curso de perícia para interassados em aprender a trabalhar com perícia contábil.</p>
+                    <p className="paragraph3">Um curso de perícia para interessados em aprender a trabalhar com perícia contábil.</p>
                     <a href=""><button>Ver curso</button></a>
             </div>
             <div className="money">
-
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <h2 className="titulo2">Tem interesse em nosso trabalho?</h2>
+                    <img src="img/budget.png" alt="orçamento" className="homeimgs" />
+                    <p className="paragraph2" style={{ textAlign: 'center'}}>Faça seu orçamento agora com nossa ferramenta gratuita e receba o retorno no mesmo dia.</p>
+                    <a href="/orçamento"><button>Fazer Orçamento</button></a>
+                    <br></br>
+                    <br></br>
+                    <br></br>
             </div>
         </>
     )
