@@ -22,10 +22,11 @@ function Orçamento(props) {
 
     const { handleSubmit, handleChange, values, errors } = useFormValidation(INITIAL_STATE, validateOrçamento, handleCreatePost)
     const [description, setDescription] = useState("")
+    const [text, setText] = useState("")
 
 
     function handleCreatePost() {
-        if (!user) {
+        if (false) {
             props.history.push('/login')
         } else {
             const { email, nome, telefone } = values
@@ -38,7 +39,7 @@ function Orçamento(props) {
                 created: Date.now()
             }
             firebase.db.collection('orçamentos').add(newPost)
-            props.history.push('/painel')
+            props.history.push('/')
         }
     }
 
@@ -47,12 +48,12 @@ function Orçamento(props) {
         <Container>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Create</title>
+                <title>Orçamento</title>
                 <meta name="description" content="In the process of creating a post."></meta>
             </Helmet>
             <br></br>
             <br></br>
-            <h2 className="titulo2">Publicando seu post</h2>
+            <h2 className="titulo2">Escreva os detalhes do seu pedido de orçamento</h2>
             <br></br>
             <Form onSubmit={handleCreatePost} className="flex flex-column">
 
@@ -114,6 +115,8 @@ function Orçamento(props) {
                     Publicar
                 </button>
                 <br></br>
+                <br></br>
+                <h5>{text}</h5>
                 <br></br>
                 <br></br>
             </Form>
