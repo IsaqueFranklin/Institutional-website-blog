@@ -17,6 +17,7 @@ import ReadPost from './components/ReadPost'
 import Footer from './components/Footer'
 import Orçamento from './components/Orçamento'
 import Contato from './components/Contato'
+import Enviado from './components/Enviado'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path='/blog' component={Blog} />
             <Route path='/contato' component={Contato} />
             <Route path='/orçamento' component={Orçamento} />
+            <Route path='/enviado' component={Enviado} />
             <Route path='/update/:postId' component={UpdatePost} />
             <Route path='/post/:postId' component={ReadPost} />
             <PrivateRoute path='/painel' component={Painel} />

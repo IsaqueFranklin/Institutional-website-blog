@@ -39,7 +39,7 @@ function Orçamento(props) {
                 created: Date.now()
             }
             firebase.db.collection('orçamentos').add(newPost)
-            props.history.push('/')
+            props.history.push('/enviado')
         }
     }
 
