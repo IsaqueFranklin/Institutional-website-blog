@@ -57,12 +57,12 @@ function CreatePost(props) {
             </Helmet>
             <br></br>
             <br></br>
-            <h2 className="titulo">Publishing your post</h2>
+            <h2 className="titulo2">Publicando seu post</h2>
             <br></br>
             <Form onSubmit={handleCreatePost} className="flex flex-column">
 
                 <Form.Group id="Post">
-                    <Form.Label>Title of the post</Form.Label>
+                    <Form.Label>Título do post</Form.Label>
                     <Form.Control
                     onChange={handleChange}
                     values={values.title}
@@ -75,7 +75,7 @@ function CreatePost(props) {
                 {errors.title && <p className="error-text">{errors.title}</p>}
                 <br></br>
                 <Form.Group id="thumb">
-                    <Form.Label>Post Thumb Url</Form.Label>
+                    <Form.Label>Link da imagem de capa</Form.Label>
                     <Form.Control
                     onChange={handleChange}
                     values={values.thumbImg}
@@ -88,7 +88,7 @@ function CreatePost(props) {
                 {errors.thumbImg && <p className="error-text">{errors.thumbImg}</p>}
                 <br></br>
                 <Form.Group id="content">
-                    <Form.Label>Content</Form.Label>
+                    <Form.Label>Conteúdo</Form.Label>
                     <CKEditor
                     style={{ height: 400, }}
                     className=""
@@ -103,8 +103,11 @@ function CreatePost(props) {
                 {errors.content && <p className="error-text">{errors.content}</p>}
                 <br></br>
                 <button className="" type="submit">
-                    Publish
+                    Publicar
                 </button>
+                <br></br>
+                <br></br>
+                <br></br>
             </Form>
         </Container>
     )

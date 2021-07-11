@@ -19,10 +19,10 @@ function Header() {
                     <Nav.Link href="/serviços">Serviços</Nav.Link>
                     {user && (
                         <>
-                        <NavDropdown title={user.displayName} id="collasible-nav-dropdown">
+                        <NavDropdown title='perfil' id="collasible-nav-dropdown">
                             <NavDropdown.Item onClick={() => firebase.logout()}>Sair</NavDropdown.Item>
+                            <NavDropdown.Item href='/create'>Criar post</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href='/create'>Criar post</Nav.Link>
                         </>
                     )}
                 </Nav>

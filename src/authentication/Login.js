@@ -40,7 +40,7 @@ function Login(props) {
         <CenteredContainer>
         <Card className="midia">
           <Card.Body className="midia2">
-            <h2 className="titulo">{login ? "Login" : "Crie sua conta"}</h2>
+            <h2 className="titulo2">{login ? "Login" : "Crie sua conta"}</h2>
             <Form onSubmit={handleSubmit} className="flex flex-column">
               {!login && (
               <>
