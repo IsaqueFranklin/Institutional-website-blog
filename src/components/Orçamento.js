@@ -35,7 +35,7 @@ function Orçamento(props) {
                 nome,
                 telefone,
                 description: description,
-                respondido: false,
+                respondido: 0,
                 created: Date.now()
             }
             firebase.db.collection('orçamentos').add(newPost)

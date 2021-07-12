@@ -17,7 +17,7 @@ function Painel(props) {
     function getBudgets() {
         return firebase.db
         .collection('orçamentos')
-        .where('respodido', '==', false)
+        .where('respondido', '==', '0')
         .orderBy('created', 'desc')
         .onSnapshot(handleSnapshot)
     }
@@ -32,9 +32,8 @@ function Painel(props) {
 
     function respondido(post){
         firebase.db.collection('orçamentos').doc(post).update({
-            respondido: true
+            respondido: '1'
         })
-        props.history.push('/painel')
     }
 
     return (
