@@ -17,7 +17,6 @@ function Painel(props) {
     function getBudgets() {
         return firebase.db
         .collection('orçamentos')
-        .where('respondido', '==', '0')
         .orderBy('created', 'desc')
         .onSnapshot(handleSnapshot)
     }
@@ -34,6 +33,10 @@ function Painel(props) {
         firebase.db.collection('orçamentos').doc(post).update({
             respondido: '1'
         })
+    }
+
+    function deleteLink(post){
+        firebase.db.collection('orçamentos').doc(post).delete()
     }
 
     return (
@@ -57,7 +60,16 @@ function Painel(props) {
                         <small>Telefone:</small><p className="paragraph2">{post.telefone}</p>
                         <small>Email:</small><p className="paragraph2">{post.email}</p>
                         <small>Descrição:</small><div dangerouslySetInnerHTML={{ __html: post.description }} />
+                        {post.respondido == '0' ? (
+                        <>
                         <button onClick={respondido(post.id)}>Marcar como respondido</button>
+                        </>
+                        ) : (
+                        <>
+                        <p className="paragraph2">Já foi respondido.</p>
+                        <button onClick={deleteLink(post.id)}>Excluir</button>
+                        </>
+                        )}
                         </Card.Body>
                     </Card>
                 ))}
