@@ -2,7 +2,14 @@ import React, { useContext, useEffect, useState } from 'react'
 import FirebaseContext from '../firebase/context'
 import PostContainer from './PostContainer'
 import { Container, Card, Row, Col } from 'react-bootstrap'
-import { Helmet } from 'react-helmet'
+import {Helmet} from "react-helmet";
+
+const seo = {
+    title: 'blog Arca Perícia',
+    description: 'saiba das notícias do momento da área de perícia contábil e dos nossos conteúdos exclusivos produzidos exatamente para você, nosso cliente.',
+    url: '',
+    image: 'https://arca-pericia.firebaseapp.com/img/course.png',
+}
 
 
 function Blog(props) {
@@ -34,11 +41,18 @@ function Blog(props) {
 
     return (
         <>
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title>Blogme</title>
-            <meta name="description" content="Start your blog today and free your toughts."></meta>
-        </Helmet>
+         <Helmet
+            title={`${seo.title}`}
+            meta={[
+                { name: 'description', property: 'og:description', content: seo.description },
+                { property: 'og:title', content: `${seo.title}` },
+                { property: 'og:url', content: seo.url },
+                { property: 'og:image', content: seo.image },
+                { property: 'og:image:type', content: 'image/jpeg' },
+                { property: 'twitter:image:src', content: seo.image },
+                { property: 'twitter:title', content: `${seo.title}` },
+                { property: 'twitter:description', content: seo.description },
+        ]} />
         <div className="blogbanner">
             <div className="frontWords">
                 <h1 className="titulo">Arca Perícia Blog</h1>

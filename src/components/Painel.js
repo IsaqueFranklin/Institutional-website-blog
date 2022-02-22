@@ -35,6 +35,8 @@ function Painel(props) {
         })
     }
 
+    
+
     function deleteLink(post){
         firebase.db.collection('orçamentos').doc(post).delete()
     }
@@ -60,16 +62,7 @@ function Painel(props) {
                         <small>Telefone:</small><p className="paragraph2">{post.telefone}</p>
                         <small>Email:</small><p className="paragraph2">{post.email}</p>
                         <small>Descrição:</small><div dangerouslySetInnerHTML={{ __html: post.description }} />
-                        {post.respondido == '0' ? (
-                        <>
-                        <button onClick={respondido(post.id)}>Marcar como respondido</button>
-                        </>
-                        ) : (
-                        <>
-                        <p className="paragraph2">Já foi respondido.</p>
                         <button onClick={deleteLink(post.id)}>Excluir</button>
-                        </>
-                        )}
                         </Card.Body>
                     </Card>
                 ))}

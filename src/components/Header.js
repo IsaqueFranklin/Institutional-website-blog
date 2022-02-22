@@ -26,12 +26,7 @@ function Header() {
                         </>
                     )}
                 </Nav>
-                <Nav className="socialIcons">
-                    <Nav.Link href=""><img className="logo" src="img/instagram.png" alt="instagram img"/></Nav.Link>
-                    <Nav.Link href=""><img className="logo" src="img/facebook.png" alt="facebook img"/></Nav.Link>
-                    <Nav.Link href=""><img className="logo" src="img/whatsapp.png" alt="whatsapp img"/></Nav.Link>
-                    <Nav.Link href=""><img className="logo" src="img/email.png" alt="email img" /></Nav.Link>
-                </Nav>
+                
             </Navbar.Collapse>
         </Navbar>
     )

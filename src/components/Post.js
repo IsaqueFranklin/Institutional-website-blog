@@ -5,11 +5,19 @@ import { Container, Card } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
 import distanceInWordsToNow from 'date-fns/formatDistanceToNow'
 import format from 'date-fns/format'
+import {Helmet} from "react-helmet";
 
 
 function Post({ post, showCount, history }) {
 
     const { firebase, user } = useContext(FirebaseContext)
+
+    const seo = {
+        title: "{post.title}",
+        description: 'Faça seu orçamento personalizado com a Arca Perícia e receba um email com os detalhes.',
+        url: '',
+        image: 'https://arca-pericia.firebaseapp.com/img/course.png',
+    }
 
     return (
         <div>
